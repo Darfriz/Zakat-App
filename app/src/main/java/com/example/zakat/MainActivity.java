@@ -12,8 +12,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.zakat.R;
 import android.net.Uri;
+import com.example.zakat.R;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             // Share using an Intent
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "https://github.com/Darfriz/Zakat-App/tree/master"); // Change the message as needed
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "Check out this link: https://github.com/Darfriz/Zakat-App/tree/master"); // Change the message as needed
             sendIntent.setType("text/plain");
 
             Intent shareIntent = Intent.createChooser(sendIntent, "Share link via");
